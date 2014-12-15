@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A83F9E0B1A3E983E0058D4D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83F9E0A1A3E983E0058D4D3 /* MapKit.framework */; };
+		A842DAA61A3E5B5F00E0BE07 /* VerificationCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842DAA51A3E5B5F00E0BE07 /* VerificationCtr.swift */; };
 		A84FF45C1A3DE170008EBAB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FF45B1A3DE170008EBAB7 /* AppDelegate.swift */; };
 		A84FF45E1A3DE170008EBAB7 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FF45D1A3DE170008EBAB7 /* MasterViewController.swift */; };
 		A84FF4601A3DE170008EBAB7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FF45F1A3DE170008EBAB7 /* DetailViewController.swift */; };
@@ -14,6 +16,11 @@
 		A84FF4651A3DE170008EBAB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84FF4641A3DE170008EBAB7 /* Images.xcassets */; };
 		A84FF4681A3DE170008EBAB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A84FF4661A3DE170008EBAB7 /* LaunchScreen.xib */; };
 		A84FF4741A3DE170008EBAB7 /* Locator2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FF4731A3DE170008EBAB7 /* Locator2_0Tests.swift */; };
+		A84FF47E1A3DE730008EBAB7 /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FF47D1A3DE730008EBAB7 /* WebServiceAPI.swift */; };
+		A84FF4801A3DE7D2008EBAB7 /* ConfigServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FF47F1A3DE7D2008EBAB7 /* ConfigServices.swift */; };
+		A84FF4841A3DEC35008EBAB7 /* FirstStepsCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FF4831A3DEC35008EBAB7 /* FirstStepsCtr.swift */; };
+		A84FF4861A3DECAC008EBAB7 /* LoginCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FF4851A3DECAC008EBAB7 /* LoginCtr.swift */; };
+		A84FF4881A3E0885008EBAB7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FF4871A3E0885008EBAB7 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A83F9E0A1A3E983E0058D4D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A842DAA51A3E5B5F00E0BE07 /* VerificationCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCtr.swift; sourceTree = "<group>"; };
 		A84FF4561A3DE170008EBAB7 /* Locator2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locator2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FF45A1A3DE170008EBAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A84FF45B1A3DE170008EBAB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +47,11 @@
 		A84FF46D1A3DE170008EBAB7 /* Locator2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Locator2.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FF4721A3DE170008EBAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A84FF4731A3DE170008EBAB7 /* Locator2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locator2_0Tests.swift; sourceTree = "<group>"; };
+		A84FF47D1A3DE730008EBAB7 /* WebServiceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = WebServiceAPI.swift; sourceTree = "<group>"; };
+		A84FF47F1A3DE7D2008EBAB7 /* ConfigServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigServices.swift; sourceTree = "<group>"; };
+		A84FF4831A3DEC35008EBAB7 /* FirstStepsCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstStepsCtr.swift; path = ../../localizador/localizador/FirstStepsCtr.swift; sourceTree = "<group>"; };
+		A84FF4851A3DECAC008EBAB7 /* LoginCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCtr.swift; sourceTree = "<group>"; };
+		A84FF4871A3E0885008EBAB7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83F9E0B1A3E983E0058D4D3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 		A84FF44D1A3DE170008EBAB7 = {
 			isa = PBXGroup;
 			children = (
+				A83F9E0A1A3E983E0058D4D3 /* MapKit.framework */,
 				A84FF4581A3DE170008EBAB7 /* Locator2.0 */,
 				A84FF4701A3DE170008EBAB7 /* Locator2.0Tests */,
 				A84FF4571A3DE170008EBAB7 /* Products */,
@@ -83,9 +99,15 @@
 				A84FF45D1A3DE170008EBAB7 /* MasterViewController.swift */,
 				A84FF45F1A3DE170008EBAB7 /* DetailViewController.swift */,
 				A84FF4611A3DE170008EBAB7 /* Main.storyboard */,
+				A84FF4831A3DEC35008EBAB7 /* FirstStepsCtr.swift */,
+				A842DAA51A3E5B5F00E0BE07 /* VerificationCtr.swift */,
+				A84FF4851A3DECAC008EBAB7 /* LoginCtr.swift */,
 				A84FF4641A3DE170008EBAB7 /* Images.xcassets */,
 				A84FF4661A3DE170008EBAB7 /* LaunchScreen.xib */,
 				A84FF4591A3DE170008EBAB7 /* Supporting Files */,
+				A84FF47D1A3DE730008EBAB7 /* WebServiceAPI.swift */,
+				A84FF47F1A3DE7D2008EBAB7 /* ConfigServices.swift */,
+				A84FF4871A3E0885008EBAB7 /* Utilities.swift */,
 			);
 			path = Locator2.0;
 			sourceTree = "<group>";
@@ -215,9 +237,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A84FF4801A3DE7D2008EBAB7 /* ConfigServices.swift in Sources */,
 				A84FF4601A3DE170008EBAB7 /* DetailViewController.swift in Sources */,
+				A84FF4841A3DEC35008EBAB7 /* FirstStepsCtr.swift in Sources */,
 				A84FF45E1A3DE170008EBAB7 /* MasterViewController.swift in Sources */,
 				A84FF45C1A3DE170008EBAB7 /* AppDelegate.swift in Sources */,
+				A84FF4861A3DECAC008EBAB7 /* LoginCtr.swift in Sources */,
+				A84FF4881A3E0885008EBAB7 /* Utilities.swift in Sources */,
+				A842DAA61A3E5B5F00E0BE07 /* VerificationCtr.swift in Sources */,
+				A84FF47E1A3DE730008EBAB7 /* WebServiceAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +437,7 @@
 				A84FF4791A3DE170008EBAB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A84FF47A1A3DE170008EBAB7 /* Build configuration list for PBXNativeTarget "Locator2.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +446,7 @@
 				A84FF47C1A3DE170008EBAB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

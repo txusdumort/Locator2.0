@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import MapKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
-
+    @IBOutlet weak var MapView: MKMapView!
     var detailItem: AnyObject? {
         didSet {
             // Update the view.
@@ -23,6 +24,10 @@ class DetailViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail: AnyObject = self.detailItem {
+            
+            
+            
+            
             if let label = self.detailDescriptionLabel {
                 label.text = detail.description
             }
@@ -32,6 +37,27 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var latitude: CLLocationDegrees = 48.399193
+        var longitude: CLLocationDegrees = 9.993341
+        
+        var latDelta: CLLocationDegrees = 0.01
+        var longDelta: CLLocationDegrees = 0.01
+        
+        var theSpan: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
+        
+        var bagLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        
+        var theRegion: MKCoordinateRegion = MKCoordinateRegionMake(bagLocation, theSpan)
+        
+        println(theRegion)
+        self.MapView.setRegion(theRegion, animated: true)
+        var ann = MKPointAnnotation()
+        ann.coordinate = bagLocation
+        ann.title = "algo"
+        ann.subtitle = "mas"
+        
+        self.MapView.addAnnotation(ann)
+
         self.configureView()
     }
 

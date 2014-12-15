@@ -16,6 +16,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        var rootViewController : UIViewController;
+        
+        if (defaults.boolForKey("Verification")){
+            defaults.setBool(true, forKey: "HasBeenLaunched")
+            
+            //falta verificar que existe un archivo
+            defaults.setBool(false, forKey: "Verification")
+            defaults.synchronize()
+            
+            rootViewController = storyboard.instantiateViewControllerWithIdentifier("VerificationCtr") as UIViewController
+        } else if (defaults.boolForKey("HasBeenLaunched")) {
+            // This gets executed if the app has ALREADY been launched
+            rootViewController = storyboard.instantiateViewControllerWithIdentifier("LoginCtr") as UIViewController
+        } else {
+            // This gets executed if the app has NEVER been launched
+            defaults.setBool(true, forKey: "Verification")
+            defaults.synchronize()
+            
+            rootViewController = storyboard.instantiateViewControllerWithIdentifier("ConfigurationCtr") as UIViewController
+        }
+    
+        self.window?.rootViewController = rootViewController;
+        self.window?.makeKeyAndVisible();
+        
         return true
     }
 
